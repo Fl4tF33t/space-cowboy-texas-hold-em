@@ -1,0 +1,27 @@
+# Rust build output
+target/
+
+# Rust/RustRover/IntelliJ
+.idea/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Profiling / generated files
+*.profraw
+*.pdb
+
+# Temporary files
+*.tmp
+*.temp
