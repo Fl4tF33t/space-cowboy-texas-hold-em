@@ -15,6 +15,10 @@ pub fn startup(
         player,
         table_id: id_generator.current_id()
     });
+    commands.trigger(RequestLeaveTable {
+        player,
+        table_id: id_generator.current_id()
+    });
 }
 
 pub fn handle_join_table(

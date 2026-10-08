@@ -11,10 +11,11 @@ impl Table {
             id,
         }
     }
-    pub fn get_id(&self) -> u32 {
-        self.id
-    }
+    // pub fn get_id(&self) -> u32 {
+    //     self.id
+    // }
 }
+
 
 #[derive(Component)]
 pub struct Seats {
@@ -27,9 +28,9 @@ impl Seats {
             players: vec![None; max_players],
         }
     }
-    pub fn clear(&mut self) {
-        self.players.clear();
-    }
+    // pub fn clear(&mut self) {
+    //     self.players.clear();
+    // }
 
     pub fn seat_player(&mut self, player_entity: Entity) -> Result<(), &'static str> {
         for seat in &mut self.players {
